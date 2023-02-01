@@ -10,6 +10,7 @@ public class Selenium1 {
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
+		driver.switchto().alert().accept();
 		driver.quit();
 		
 		
